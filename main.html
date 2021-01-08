@@ -1,13 +1,13 @@
 <title>ArzNet Application</title>
 <script src="addlink.js"></script>
-<link rel=icon href="../theme/images/ico.jpg">
-<link rel=stylesheet href="../theme/theme.css">
+<link rel=icon href="ico.jpg">
+<link rel=stylesheet href="theme.css">
 <script>
 window.onload = function(){
 var a = String(window.location);
 if (a.includes("=")) {
 var b = a.substring(a.lastIndexOf("=") + 1)
-var c = `../urls/${b}.html`;
+var c = `${b}.html`;
 document.getElementById("return").setAttribute("href",a);
 if (b.includes("%2F")) {
 var d = a.substring(a.indexOf("=") + 1)
@@ -18,7 +18,7 @@ var k = `${f}.`
 document.getElementById('urlsl').innerHTML = k;
 var g = d.split('%2F')
 var h = g.toString().replace(/,/g, "/")
-var j = `../urls/${h}.html`;
+var j = `${h}.html`;
 document.getElementById("embed").setAttribute("src",j);
 }
 if (!a.includes("%2F")) {
