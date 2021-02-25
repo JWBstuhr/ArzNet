@@ -7,7 +7,7 @@ window.onload = function(){
 var a = String(window.location);
 if (a.includes("=")) {
 var b = a.substring(a.lastIndexOf("=") + 1)
-var c = `${b}.html`;
+var c = `urls/${b}.html`;
 document.getElementById("return").setAttribute("href",a);
 if (b.includes("%2F")) {
 var d = a.substring(a.indexOf("=") + 1)
