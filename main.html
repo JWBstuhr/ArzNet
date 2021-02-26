@@ -1,0 +1,31 @@
+<title>ArzNet Application</title>
+<script src="addlink.js"></script>
+<link rel=icon href="images/ico.png">
+<link rel=stylesheet href="theme.css">
+<script>
+window.onload = function(){
+var a = String(window.location);
+if (a.includes("=")) {
+var b = a.substring(a.lastIndexOf("=") + 1)
+var c = `urls/${b}.html`;
+document.getElementById("return").setAttribute("href",a);
+if (b.includes("%2F")) {
+var d = a.substring(a.indexOf("=") + 1)
+var e = d.split('%2F')[0]
+document.getElementById('url').innerHTML = e;
+var f = a.substring(a.lastIndexOf("%2F") + 3)
+var k = `${f}.`
+document.getElementById('urlsl').innerHTML = k;
+var g = d.split('%2F')
+var h = g.toString().replace(/,/g, "/")
+var j = `${h}.html`;
+document.getElementById("embed").setAttribute("src",j);
+}
+if (!a.includes("%2F")) {
+document.getElementById('url').innerHTML = b;
+document.getElementById("embed").setAttribute("src",c);
+}}}
+</script>
+<p class="pxl">JWBnet Browser <span class="dgry">|</span> v2.5 <span class="dgry">|</span>&nbsp;<span class="lgry">[</span><span class="grn">Secure</span><span class="lgry">]</span> https://<span id="urlsl"></span><span id="url"></span>.jwb/</p>
+<div class="plbfixcon"><p><a class="plbtnfix" href="index.html">Return to Home</a><br><a class="plbtnfix" id="return">Refresh</a></p></div>
+<iframe id="embed"></iframe>

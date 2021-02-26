@@ -1,0 +1,84 @@
+body {
+background: black;
+}
+p {
+color: white;
+text-align: center;
+}
+h1 {
+color: white;
+text-align: center;
+}
+h2 {
+color: white;
+text-align: center;
+}
+h3 {
+color: white;
+text-align: center;
+}
+a {
+text-decoration: none;
+color: red;
+}
+form {
+text-align: center;
+}
+iframe {
+width: 100%;
+height: calc(100% - 35px);
+}
+.red {
+color: #ff0000;
+}
+.grn {
+color: #008000;
+}
+.dgry {
+color: #333333;
+}
+.lgry {
+color: #808080;
+}
+.wht {
+color: #ffffff;
+}
+.bld {
+font-weight: bold;
+}
+.uln {
+text-decoration: underline;
+}
+.pg {
+color: red;
+}
+.pgu {
+text-decoration: underline;
+color: red;
+}
+.btn {
+text-decoration: underline;
+text-decoration: bold;
+color: red;
+}
+.gbtn {
+text-decoration: underline;
+text-decoration: bold;
+color: #555555;
+}
+.plbfixcon {
+position: fixed;
+right: 37%;
+left: 37%;
+margin-top: 45.5%;
+background-color: #000000;
+opacity: 85%;
+padding-left: 15px;
+padding-right: 15px;
+}
+.plbtnfix {
+color: red;
+}
+.plbtnfix:hover {
+text-decoration: underline;
+}
